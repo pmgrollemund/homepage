@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="description" content="Teaching" />
+	<meta name="keywords" content="" />
+	<meta name="author" content="Paul-Marie Grollemund" />
+	<link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz|Droid+Sans' rel='stylesheet' type='text/css' />
+	<link rel="stylesheet" type="text/css" media="all" href="inland.css" />
+	<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery.nivo.slider.js"></script>
+	<title>Teaching</title>
+</head>
+
+<body>
+<div id="wrapper960" class="clearfix">
+	<div id="toplinks">
+		<ul class="toplinks_links">
+			<li><a href="http://imag.edu.umontpellier.fr/">IMAG</a></li>
+			<li><a href="http://www6.montpellier.inra.fr/mistea">MISTEA</a></li>
+		</ul>
+	</div>
+	<div id="header" class="clearfix">
+		<div id="sitetitle" class="clearfix">
+			<h1><a href="index.html">Paul-Marie Grollemund</a></h1>
+		</div>
+
+		<div id="nav" class="clearfix">
+			<ul>
+				<li><a href="index.html">Home</a></li> 
+				<li><a href="research.html">Research</a></li> 
+				<li><a class="current" href="teaching.html">Teaching (fr)</a></li> 
+				<li><a href="CV.html">Curriculum Vitae</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="slider-wrapper">
+		<div id="slider" class="nivoSlider">
+			<img src="images/slideTeaching.JPG" alt="" />
+			<img src="images/slideResearch5.jpg" alt="" />
+			<!-- <img src="images/slideResearch3.jpg" alt="" /> -->
+			<!-- <img src="images/slideResearch2.jpg" alt="" /> -->
+			<!-- <img src="images/slideResearch4.jpg" alt="" /> -->
+			<!-- <img src="images/slideResearch7.jpg" alt="" /> -->
+			<!-- <img src="images/slideResearch5.jpg" alt="" /> -->
+			<!-- <img src="images/slideResearch8.jpg" alt="" /> -->
+			<!-- <img src="images/slideResearch6.jpg" alt="" /> -->
+		</div>
+	</div>
+
+	<div id="content" class="clearfix shadow">	
+		<h2><span class="greentxt">Enseignements </span></h2>		
+		<ul style="list-style-type:disc">
+			<li><b> Certification C2i niveau 1 : </b> Licence filières santé
+			</li>
+			<li><b> TD du parcours "Orthophonie" 2ème année, 2017-2018, Université de Montpellier : </b> Probabilité et statistiques (22h) <b>[<a href="Support_orthophonie.html">support</a>]</b>
+
+			</li>
+			<li><b> TD du parcours "PACES" 1ère année, 2017-2018, Université de Montpellier : </b> Evaluation des méthodes d’analyses appliquées aux sciences de la vie et de la santé (60h)
+			</li>
+			<li><b> TD du parcours "Ingénieur agronome" 1ère année, 2015-2017, Montpellier SupAgro : </b>  Analyses de Données (12h/an)
+			</li>
+			<li><b> TD du parcours "Ingénieur agronome" 1ère année, 2015-2017, Montpellier SupAgro : </b>  Statistique inférentielle (52h/an)
+			</li>
+		</ul> 
+	</div>
+
+	<div id="content" class="clearfix shadow">	
+		<h2><span class="greentxt">Encadrement </span></h2>		
+		<ul style="list-style-type:disc">
+			<li><b> Co-encadrement de stage, printemps 2015, I3M : </b>  "Le lasso bayésien" de Louis Raynal
+			</li>
+		</ul> 
+	</div>
+
+
+
+
+	<div id="footer" class="shadow">
+		<p>&copy; 2015 Paul-Marie Grollemund | <a href="http://andreasviklund.com/templates/inland/">Template design</a> by <a href="http://andreasviklund.com/">andreasviklund.com</a><br />Best hosted at <a href="https://www.svenskadomaner.se/?ref=mall&amp;ling=en" title="Svenska Domäner AB">www.svenskadomaner.se</a></p>
+	</div>
+</div>
+
+<script type="text/javascript">
+	$(window).load(function() {
+		$('#slider').nivoSlider();
+	});
+function ouvrirFermerSpoiler(bouton) {
+    var divContenu = bouton.nextSibling;
+    if(divContenu.nodeType == 3) divContenu = divContenu.nextSibling;
+    if(divContenu.style.display == 'block') {
+        divContenu.style.display = 'none';
+    } else {
+        divContenu.style.display = 'block';
+    }
+pdfDocument = document.getElementById("cv");
+pageWidth = document.getElementById("content").offsetWidth;
+documentWidth = 0.3 * pageWidth;
+pdfDocument.style.width = documentWidth + "px";
+pdfDocument.style.height = documentWidth * 1.2 + "px";
+}
+</script>
+</body>
+</html>
